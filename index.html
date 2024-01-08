@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+<input class="c1" type="text" />
+<button onclick="fun()">hide</button>
+</body>
+<script>
+function fun() {
+  var input = document.querySelector(".c1");
+  var btn = document.querySelector("button");
+
+  if (input.getAttribute('type') == 'text') 
+  {
+    input.setAttribute('type', 'password');
+	btn.innerHTML="show"
+  } 
+  else 
+  {
+    input.setAttribute('type', 'text');
+	btn.innerHTML="hide"
+  }
+}
+</script>
+</html>
